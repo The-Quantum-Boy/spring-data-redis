@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redis-pubsub" />
+        <module name="Redisearch1" />
+        <module name="redis-example2" />
+        <module name="RedisCache" />
+        <module name="distributed-cache1" />
+        <module name="redis-example (1)" />
+        <module name="redisluascript" />
+        <module name="redis-stream-consumer" />
+        <module name="redis-example (2)" />
+        <module name="redis-stream-publisher" />
+        <module name="RedisExample4" />
+        <module name="springDataRedis" />
+      </profile>
+      <profile name="Annotation profile for redisearch-jedis-rest" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+        </processorPath>
+        <module name="redisearch-jedis-rest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="redis-example" target="17" />
+      <module name="redis-example3" target="17" />
+      <module name="redis-management-ex1" target="17" />
+      <module name="redis-session-management-ex1" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="RedisCache" options="-parameters" />
+      <module name="RedisExample4" options="-parameters" />
+      <module name="Redisearch1" options="-parameters" />
+      <module name="distributed-cache1" options="-parameters" />
+      <module name="redis-example" options="-parameters" />
+      <module name="redis-example (1)" options="-parameters" />
+      <module name="redis-example (2)" options="-parameters" />
+      <module name="redis-example2" options="-parameters" />
+      <module name="redis-example3" options="-parameters" />
+      <module name="redis-management-ex1" options="-parameters" />
+      <module name="redis-pubsub" options="-parameters" />
+      <module name="redis-session-management-ex1" options="-parameters" />
+      <module name="redis-stream-consumer" options="-parameters" />
+      <module name="redis-stream-publisher" options="-parameters" />
+      <module name="redisearch-jedis-rest" options="-parameters" />
+      <module name="redisluascript" options="-parameters" />
+      <module name="springDataRedis" options="-parameters" />
+    </option>
+  </component>
+</project>

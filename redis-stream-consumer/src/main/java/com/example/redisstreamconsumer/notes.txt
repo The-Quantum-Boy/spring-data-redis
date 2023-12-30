@@ -1,0 +1,15 @@
+In a multithreaded application,
+if multiple threads are calling the publishEvent method simultaneously
+to publish messages, there could be a race condition where different threads
+try to update the message count simultaneously, leading to potential
+inconsistencies or unexpected behavior.
+
+Using a regular int variable without synchronization could lead to issues
+like lost updates or incorrect counts. By using an AtomicInteger,
+the incrementAndGet() operation is guaranteed to be atomic, meaning that it
+will complete without interference from other threads.
+This ensures that
+the message count is accurate and consistent, even in a multithreaded scenario.
+By using an AtomicInteger, the incrementAndGet() operation is guaranteed to be atomic, meaning that it will complete without interference from other threads. This ensures that the message count is accurate and consistent, even in a multi-threaded scenario.
+
+
